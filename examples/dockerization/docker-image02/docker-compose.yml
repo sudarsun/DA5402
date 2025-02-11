@@ -1,0 +1,14 @@
+services:
+    web:
+        # setup environment variables if any
+        environment:
+        - REST_API_PORT=17000
+        # build the docker image for the REST API server
+        build: .
+        # map the docker app's 7000 (default) port to host's 10000 port
+        ports:
+        - "10000:17000"
+        # setup volume mapping if any.
+        volumes:
+        - ./tmp:/tmp
+
