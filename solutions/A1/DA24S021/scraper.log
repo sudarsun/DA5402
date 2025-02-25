@@ -1,0 +1,58 @@
+2025-02-03 00:09:14,042 - INFO - Scraper started.
+2025-02-03 00:09:14,679 - INFO - Successfully scraped Google News homepage.
+2025-02-03 00:09:14,695 - INFO - Top Stories link found: https://news.google.com/topics/CAAqKggKIiRDQkFTRlFvSUwyMHZNRFZxYUdjU0JXVnVMVWRDR2dKSlRpZ0FQAQ?hl=en-IN&gl=IN&ceid=IN%3Aen
+2025-02-03 00:09:41,238 - INFO - Extracted 50 stories from 'Top Stories' page.
+2025-02-03 00:09:42,380 - INFO - Database 'news_db' created successfully.
+2025-02-03 00:09:42,508 - INFO - Tables checked/created successfully.
+2025-02-03 00:09:42,536 - INFO - 0 duplicates found
+2025-02-03 00:09:43,001 - INFO - 0 duplicates found
+2025-02-03 00:09:43,184 - INFO - 0 duplicates found
+2025-02-03 00:09:43,515 - INFO - 0 duplicates found
+2025-02-03 00:09:43,870 - INFO - 0 duplicates found
+2025-02-03 00:09:44,191 - INFO - 0 duplicates found
+2025-02-03 00:09:44,804 - INFO - 0 duplicates found
+2025-02-03 00:09:45,320 - INFO - 0 duplicates found
+2025-02-03 00:09:45,884 - INFO - 0 duplicates found
+2025-02-03 00:09:46,450 - INFO - 0 duplicates found
+2025-02-03 00:09:47,142 - INFO - 0 duplicates found
+2025-02-03 00:09:47,845 - INFO - 0 duplicates found
+2025-02-03 00:09:48,489 - INFO - 0 duplicates found
+2025-02-03 00:09:49,251 - INFO - 0 duplicates found
+2025-02-03 00:09:50,344 - INFO - 0 duplicates found
+2025-02-03 00:09:51,568 - INFO - 0 duplicates found
+2025-02-03 00:09:52,523 - INFO - 0 duplicates found
+2025-02-03 00:09:53,348 - INFO - 0 duplicates found
+2025-02-03 00:09:54,789 - INFO - 0 duplicates found
+2025-02-03 00:09:56,059 - INFO - 0 duplicates found
+2025-02-03 00:09:57,487 - INFO - 0 duplicates found
+2025-02-03 00:09:58,633 - INFO - 0 duplicates found
+2025-02-03 00:10:00,119 - INFO - 0 duplicates found
+2025-02-03 00:10:01,492 - INFO - 0 duplicates found
+2025-02-03 00:10:02,838 - INFO - 0 duplicates found
+2025-02-03 00:10:04,170 - INFO - 0 duplicates found
+2025-02-03 00:10:05,313 - INFO - 0 duplicates found
+2025-02-03 00:10:06,812 - INFO - 0 duplicates found
+2025-02-03 00:10:08,257 - INFO - 0 duplicates found
+2025-02-03 00:10:09,870 - INFO - 0 duplicates found
+2025-02-03 00:10:11,428 - INFO - 0 duplicates found
+2025-02-03 00:10:13,105 - INFO - 0 duplicates found
+2025-02-03 00:10:14,627 - INFO - 0 duplicates found
+2025-02-03 00:10:16,390 - INFO - 0 duplicates found
+2025-02-03 00:10:18,617 - INFO - 0 duplicates found
+2025-02-03 00:10:20,840 - INFO - 0 duplicates found
+2025-02-03 00:10:22,838 - INFO - 0 duplicates found
+2025-02-03 00:10:25,056 - INFO - 0 duplicates found
+2025-02-03 00:10:27,501 - INFO - 0 duplicates found
+2025-02-03 00:10:30,265 - INFO - 0 duplicates found
+2025-02-03 00:10:32,641 - INFO - 0 duplicates found
+2025-02-03 00:10:35,309 - INFO - 0 duplicates found
+2025-02-03 00:10:37,789 - INFO - 0 duplicates found
+2025-02-03 00:10:39,989 - INFO - 0 duplicates found
+2025-02-03 00:10:42,446 - INFO - 0 duplicates found
+2025-02-03 00:10:44,793 - INFO - 0 duplicates found
+2025-02-03 00:10:47,460 - INFO - 0 duplicates found
+2025-02-03 00:10:50,760 - INFO - 0 duplicates found
+2025-02-03 00:10:54,180 - INFO - 0 duplicates found
+2025-02-03 00:10:58,083 - INFO - 0 duplicates found
+2025-02-03 00:10:58,143 - INFO - Stored 50 new stories in the database.
+2025-02-03 00:10:58,145 - INFO - Scraper finished execution.
