@@ -1,0 +1,32 @@
+2025-02-02 12:29:58,253 - m6_logger - INFO - Scraping of google news successfully completed
+2025-02-02 12:29:58,258 - m6_logger - INFO - Retrieved top-stories links from scrapped Google news page
+2025-02-02 12:30:03,286 - m6_logger - INFO - 58 headline and thumbnail urls have been collected
+2025-02-02 12:30:11,530 - m6_logger - INFO - 58 has been downloaded successfully
+2025-02-02 12:30:11,935 - m6_logger - INFO - 0 rows has been populated in database
+2025-02-02 12:32:25,640 - m6_logger - INFO - Scraping of google news successfully completed
+2025-02-02 12:32:25,644 - m6_logger - INFO - Retrieved top-stories links from scrapped Google news page
+2025-02-02 12:33:21,398 - m6_logger - INFO - 385 headline and thumbnail urls have been collected
+2025-02-02 12:34:15,734 - m6_logger - INFO - 385 has been downloaded successfully
+2025-02-02 12:34:17,563 - m6_logger - INFO - 244 rows has been populated in database
+2025-02-02 22:50:42,310 - m6_logger - INFO - Scraping of google news successfully completed
+2025-02-02 22:50:42,327 - m6_logger - INFO - Retrieved top-stories links from scrapped Google news page
+2025-02-02 22:50:50,361 - m6_logger - INFO - 53 headline and thumbnail urls have been collected
+2025-02-02 22:50:59,151 - m6_logger - INFO - 53 has been downloaded successfully
+2025-02-02 22:51:00,111 - m6_logger - INFO - 53 rows has been populated in database
+2025-02-02 22:55:06,275 - m6_logger - INFO - Scraping of google news successfully completed
+2025-02-02 22:55:06,280 - m6_logger - INFO - Retrieved top-stories links from scrapped Google news page
+2025-02-02 22:55:11,502 - m6_logger - INFO - 53 headline and thumbnail urls have been collected
+2025-02-02 22:55:23,851 - m6_logger - INFO - 53 has been downloaded successfully
+2025-02-02 22:55:24,083 - m6_logger - INFO - 9 rows has been populated in database
+2025-02-02 23:05:23,786 - m6_logger - INFO - Scraping of google news successfully completed
+2025-02-02 23:05:23,790 - m6_logger - INFO - Retrieved top-stories links from scrapped Google news page
+2025-02-02 23:05:42,678 - m6_logger - INFO - Scraping of google news successfully completed
+2025-02-02 23:05:42,682 - m6_logger - INFO - Retrieved top-stories links from scrapped Google news page
+2025-02-02 23:05:49,190 - m6_logger - INFO - 53 headline and thumbnail urls have been collected
+2025-02-02 23:06:00,211 - m6_logger - INFO - 53 has been downloaded successfully
+2025-02-02 23:06:00,379 - m6_logger - INFO - 16 rows has been populated in database
+2025-02-02 23:21:33,852 - m6_logger - INFO - Scraping of google news successfully completed
+2025-02-02 23:21:33,857 - m6_logger - INFO - Retrieved top-stories links from scrapped Google news page
+2025-02-02 23:21:41,045 - m6_logger - INFO - 53 headline and thumbnail urls have been collected
+2025-02-02 23:21:59,130 - m6_logger - INFO - 53 has been downloaded successfully
+2025-02-02 23:21:59,302 - m6_logger - INFO - 10 rows has been populated in database

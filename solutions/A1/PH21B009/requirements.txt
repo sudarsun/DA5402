@@ -1,0 +1,5 @@
+pymongo
+selenium
+bs4
+tqdm
+bson
