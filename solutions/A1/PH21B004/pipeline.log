@@ -1,0 +1,213 @@
+
+WARNING:root:2025-02-02 17:09:00 - Starting Module 1
+WARNING:module1:2025-02-02 17:09:15 - Successfully parsed the page.
+WARNING:root:2025-02-02 17:09:15 - Starting Module 2
+WARNING:module2:2025-02-02 17:09:15 - Top Stories Link: https://news.google.com./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+WARNING:root:2025-02-02 17:09:15 - Starting Module 3
+WARNING:root:2025-02-02 17:09:31 - Successfully scraped 43 articles.
+WARNING:root:2025-02-02 17:09:31 - Starting Module 4
+WARNING:module4:2025-02-02 17:10:05 - Only 1 out of 43 articles stored successfully. Please check the debug logs for more details.
+WARNING:root:2025-02-02 17:10:05 - Starting Module 5
+WARNING:module5:2025-02-02 17:10:05 - No duplicate groups found.
+WARNING:root:2025-02-02 17:10:05 - Pipeline completed successfully
+INFO:root:2025-02-02 17:20:36 - Starting Module 1
+INFO:module1:2025-02-02 17:20:52 - Successfully parsed the page.
+INFO:root:2025-02-02 17:20:52 - Starting Module 2
+INFO:module2:2025-02-02 17:20:52 - Top Stories Link: https://news.google.com./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+INFO:root:2025-02-02 17:20:52 - Starting Module 3
+INFO:root:2025-02-02 17:21:08 - Successfully scraped 44 articles.
+INFO:root:2025-02-02 17:21:08 - Starting Module 4
+WARNING:module4:2025-02-02 17:21:47 - Only 5 out of 44 articles stored successfully. Please check the debug logs for more details.
+INFO:root:2025-02-02 17:21:47 - Starting Module 5
+INFO:module5:2025-02-02 17:21:47 - No duplicate groups found.
+INFO:module5:2025-02-02 17:21:47 - Total datapoints in Database: 87
+INFO:root:2025-02-02 17:21:47 - Pipeline completed successfully
+INFO:root:2025-02-02 18:00:02 - Initiating content acquisition
+INFO:root:2025-02-02 18:00:34 - Starting data storage operations
+WARNING:module4:2025-02-02 18:01:08 - Stored 0/42 articles
+INFO:module4:2025-02-02 18:01:08 - Total datapoints in Database: 93
+INFO:root:2025-02-02 18:01:08 - Executing deduplication process
+INFO:module5:2025-02-02 18:01:08 - No duplicates found in database
+INFO:module5:2025-02-02 18:01:08 - Total datapoints in Database: 93
+INFO:root:2025-02-02 18:01:08 - Pipeline completed successfully
+INFO:root:2025-02-02 18:01:22 - Starting Module 1
+INFO:root:2025-02-02 18:01:37 - Starting Module 2
+INFO:root:2025-02-02 18:01:37 - Starting Module 3
+INFO:root:2025-02-02 18:01:53 - Starting Module 4
+WARNING:module4:2025-02-02 18:02:27 - Stored 2/42 articles
+INFO:module4:2025-02-02 18:02:27 - Total datapoints in Database: 95
+INFO:root:2025-02-02 18:02:27 - Starting Module 5
+INFO:module5:2025-02-02 18:02:27 - No duplicates found in database
+INFO:module5:2025-02-02 18:02:27 - Total datapoints in Database: 95
+INFO:root:2025-02-02 18:02:27 - Pipeline completed successfully
+INFO:root:2025-02-02 18:06:56 - Starting Module 1
+INFO:module1:2025-02-02 18:07:11 - Successfully parsed the page.
+INFO:root:2025-02-02 18:07:11 - Starting Module 2
+INFO:module2:2025-02-02 18:07:11 - Top Stories Link: https://news.google.com/./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+INFO:root:2025-02-02 18:07:11 - Starting Module 3
+INFO:module3:2025-02-02 18:07:27 - Successfully scraped 43 articles.
+INFO:root:2025-02-02 18:07:27 - Starting Module 4
+WARNING:module4:2025-02-02 18:07:59 - Stored 0/43 articles
+INFO:module4:2025-02-02 18:07:59 - Total datapoints in Database: 95
+INFO:root:2025-02-02 18:07:59 - Starting Module 5
+INFO:module5:2025-02-02 18:07:59 - No duplicates found in database
+INFO:module5:2025-02-02 18:07:59 - Total datapoints in Database: 95
+INFO:root:2025-02-02 18:07:59 - Pipeline completed successfully
+INFO:root:2025-02-02 18:09:30 - -------------------- RUNNING PIPELINE --------------------
+INFO:root:2025-02-02 18:09:30 - Starting Module 1
+INFO:module1:2025-02-02 18:09:46 - Successfully parsed the page.
+INFO:root:2025-02-02 18:09:46 - Starting Module 2
+INFO:module2:2025-02-02 18:09:46 - Top Stories Link: https://news.google.com/./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+INFO:root:2025-02-02 18:09:46 - Starting Module 3
+INFO:module3:2025-02-02 18:10:01 - Successfully scraped 44 articles.
+INFO:root:2025-02-02 18:10:01 - Starting Module 4
+WARNING:module4:2025-02-02 18:10:37 - Stored 6/44 articles
+INFO:module4:2025-02-02 18:10:37 - Total datapoints in Database: 101
+INFO:root:2025-02-02 18:10:37 - Starting Module 5
+INFO:module5:2025-02-02 18:10:37 - No duplicates found in database
+INFO:module5:2025-02-02 18:10:37 - Total datapoints in Database: 101
+INFO:root:2025-02-02 18:10:37 - Pipeline completed successfully
+INFO:root:2025-02-02 18:10:37 - -------------------- PIPELINE COMPLETED --------------------
+INFO:root:2025-02-02 19:27:24 - -------------------- RUNNING PIPELINE --------------------
+INFO:root:2025-02-02 19:27:24 - Starting Module 1
+INFO:module1:2025-02-02 19:27:39 - Successfully parsed the page.
+INFO:root:2025-02-02 19:27:39 - Starting Module 2
+INFO:module2:2025-02-02 19:27:39 - Top Stories Link: https://news.google.com/./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+INFO:root:2025-02-02 19:27:39 - Starting Module 3
+INFO:module3:2025-02-02 19:27:55 - Successfully scraped 38 articles.
+INFO:root:2025-02-02 19:27:55 - Starting Module 4
+WARNING:module4:2025-02-02 19:28:28 - Stored 8/38 articles due to duplicates
+INFO:module4:2025-02-02 19:28:28 - Total datapoints in Database: 109
+INFO:root:2025-02-02 19:28:28 - Starting Module 5
+INFO:module5:2025-02-02 19:28:28 - No duplicates found in database
+INFO:module5:2025-02-02 19:28:28 - Total datapoints in Database: 109
+INFO:root:2025-02-02 19:28:28 - Pipeline completed successfully
+INFO:root:2025-02-02 19:28:28 - -------------------- PIPELINE COMPLETED --------------------
+INFO:root:2025-02-02 19:52:49 - -------------------- RUNNING PIPELINE --------------------
+INFO:root:2025-02-02 19:52:49 - Starting Module 1
+INFO:module1:2025-02-02 19:53:04 - Successfully parsed the page.
+INFO:root:2025-02-02 19:53:04 - Starting Module 2
+INFO:module2:2025-02-02 19:53:04 - Top Stories Link: https://news.google.com/./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+INFO:root:2025-02-02 19:53:04 - Starting Module 3
+INFO:root:2025-02-02 19:53:09 - -------------------- RUNNING PIPELINE --------------------
+INFO:root:2025-02-02 19:53:09 - Starting Module 1
+INFO:module3:2025-02-02 19:53:20 - Successfully scraped 37 articles.
+INFO:root:2025-02-02 19:53:20 - Starting Module 4
+INFO:module1:2025-02-02 19:53:24 - Successfully parsed the page.
+INFO:root:2025-02-02 19:53:24 - Starting Module 2
+INFO:module2:2025-02-02 19:53:24 - Top Stories Link: https://news.google.com/./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+INFO:root:2025-02-02 19:53:24 - Starting Module 3
+INFO:module3:2025-02-02 19:53:40 - Successfully scraped 37 articles.
+INFO:root:2025-02-02 19:53:40 - Starting Module 4
+WARNING:module4:2025-02-02 19:53:55 - Stored 0/37 articles due to duplicates
+INFO:module4:2025-02-02 19:53:56 - Total datapoints in Database: 120
+INFO:root:2025-02-02 19:53:56 - Starting Module 5
+INFO:module5:2025-02-02 19:53:56 - No duplicates found in database
+INFO:module5:2025-02-02 19:53:56 - Total datapoints in Database: 120
+INFO:root:2025-02-02 19:53:56 - Pipeline completed successfully
+INFO:root:2025-02-02 19:53:56 - -------------------- PIPELINE COMPLETED --------------------
+WARNING:module4:2025-02-02 19:54:12 - Stored 0/37 articles due to duplicates
+INFO:module4:2025-02-02 19:54:12 - Total datapoints in Database: 120
+INFO:root:2025-02-02 19:54:12 - Starting Module 5
+INFO:module5:2025-02-02 19:54:12 - No duplicates found in database
+INFO:module5:2025-02-02 19:54:12 - Total datapoints in Database: 120
+INFO:root:2025-02-02 19:54:12 - Pipeline completed successfully
+INFO:root:2025-02-02 19:54:12 - -------------------- PIPELINE COMPLETED --------------------
+INFO:root:2025-02-02 19:54:33 - -------------------- RUNNING PIPELINE --------------------
+INFO:root:2025-02-02 19:54:33 - Starting Module 1
+INFO:module1:2025-02-02 19:54:49 - Successfully parsed the page.
+INFO:root:2025-02-02 19:54:49 - Starting Module 2
+INFO:module2:2025-02-02 19:54:49 - Top Stories Link: https://news.google.com/./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+INFO:root:2025-02-02 19:54:49 - Starting Module 3
+INFO:module3:2025-02-02 19:55:05 - Successfully scraped 37 articles.
+INFO:root:2025-02-02 19:55:05 - Starting Module 4
+WARNING:module4:2025-02-02 19:55:33 - Stored 0/37 articles due to duplicates
+INFO:module4:2025-02-02 19:55:33 - Total datapoints in Database: 120
+INFO:root:2025-02-02 19:55:33 - Starting Module 5
+INFO:module5:2025-02-02 19:55:33 - No duplicates found in database
+INFO:module5:2025-02-02 19:55:33 - Total datapoints in Database: 120
+INFO:root:2025-02-02 19:55:33 - Pipeline completed successfully
+INFO:root:2025-02-02 19:55:33 - -------------------- PIPELINE COMPLETED --------------------
+INFO:root:2025-02-02 21:51:39 - -------------------- RUNNING PIPELINE --------------------
+INFO:root:2025-02-02 21:51:39 - Starting Module 1
+INFO:module1:2025-02-02 21:51:55 - Successfully parsed the page.
+INFO:root:2025-02-02 21:51:55 - Starting Module 2
+INFO:module2:2025-02-02 21:51:55 - Top Stories Link: https://news.google.com/./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+INFO:root:2025-02-02 21:52:11 - Starting Module 3
+INFO:module3:2025-02-02 21:52:11 - Successfully scraped 39 articles.
+INFO:root:2025-02-02 21:52:11 - Starting Module 4
+WARNING:module4:2025-02-02 21:52:49 - Stored 15/39 articles due to duplicates
+INFO:module4:2025-02-02 21:52:49 - Total datapoints in Database: 136
+INFO:root:2025-02-02 21:52:49 - Starting Module 5
+INFO:module5:2025-02-02 21:52:49 - No duplicates found in database
+INFO:module5:2025-02-02 21:52:49 - Total datapoints in Database: 136
+INFO:root:2025-02-02 21:52:49 - Pipeline completed successfully
+INFO:root:2025-02-02 21:52:49 - -------------------- PIPELINE COMPLETED --------------------
+INFO:root:2025-02-02 21:56:16 - -------------------- RUNNING PIPELINE --------------------
+INFO:root:2025-02-02 21:56:16 - Starting Module 1
+INFO:module1:2025-02-02 21:56:31 - Successfully parsed the page.
+INFO:root:2025-02-02 21:56:31 - Starting Module 2
+INFO:module2:2025-02-02 21:56:31 - Top Stories Link: https://news.google.com/./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+INFO:root:2025-02-02 21:56:47 - Starting Module 3
+INFO:module3:2025-02-02 21:56:47 - Successfully scraped 40 articles.
+INFO:root:2025-02-02 21:56:47 - Starting Module 4
+WARNING:module4:2025-02-02 21:57:16 - Stored 2/40 articles due to duplicates
+INFO:module4:2025-02-02 21:57:16 - Total datapoints in Database: 138
+INFO:root:2025-02-02 21:57:16 - Starting Module 5
+INFO:module5:2025-02-02 21:57:16 - No duplicates found in database
+INFO:module5:2025-02-02 21:57:16 - Total datapoints in Database: 138
+INFO:root:2025-02-02 21:57:16 - Pipeline completed successfully
+INFO:root:2025-02-02 21:57:16 - -------------------- PIPELINE COMPLETED --------------------
+INFO:root:2025-02-02 22:19:25 - -------------------- RUNNING PIPELINE --------------------
+INFO:root:2025-02-02 22:19:25 - Starting Module 1
+INFO:module1:2025-02-02 22:19:40 - Successfully parsed the page.
+INFO:root:2025-02-02 22:19:40 - Starting Module 2
+INFO:module2:2025-02-02 22:19:40 - Top Stories Link: https://news.google.com/./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+INFO:root:2025-02-02 22:19:56 - Starting Module 3
+INFO:module3:2025-02-02 22:19:56 - Successfully scraped 45 articles.
+INFO:root:2025-02-02 22:19:56 - Starting Module 4
+WARNING:module4:2025-02-02 22:20:37 - Stored 9/45 articles due to duplicates
+INFO:module4:2025-02-02 22:20:37 - Total datapoints in Database: 147
+INFO:root:2025-02-02 22:20:37 - Starting Module 5
+INFO:module5:2025-02-02 22:20:37 - No duplicates found in database
+INFO:module5:2025-02-02 22:20:37 - Total datapoints in Database: 147
+INFO:root:2025-02-02 22:20:37 - Pipeline completed successfully
+INFO:root:2025-02-02 22:20:37 - -------------------- PIPELINE COMPLETED --------------------
+INFO:root:2025-02-02 22:22:15 - -------------------- RUNNING PIPELINE --------------------
+INFO:root:2025-02-02 22:22:15 - Starting Module 1
+INFO:module1:2025-02-02 22:22:31 - Successfully parsed the page.
+INFO:root:2025-02-02 22:22:31 - Starting Module 2
+INFO:module2:2025-02-02 22:22:31 - Top Stories Link: https://news.google.com/./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+INFO:root:2025-02-02 22:22:47 - Starting Module 3
+INFO:module3:2025-02-02 22:22:47 - Successfully scraped 42 articles.
+INFO:root:2025-02-02 22:22:47 - Starting Module 4
+INFO:root:2025-02-02 22:23:18 - -------------------- RUNNING PIPELINE --------------------
+INFO:root:2025-02-02 22:23:18 - Starting Module 1
+INFO:module1:2025-02-02 22:23:34 - Successfully parsed the page.
+INFO:root:2025-02-02 22:23:34 - Starting Module 2
+INFO:module2:2025-02-02 22:23:34 - Top Stories Link: https://news.google.com/./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+INFO:root:2025-02-02 22:23:51 - Starting Module 3
+INFO:module3:2025-02-02 22:23:51 - Successfully scraped 45 articles.
+INFO:root:2025-02-02 22:23:51 - Starting Module 4
+WARNING:module4:2025-02-02 22:24:25 - Stored 1/45 articles due to duplicates
+INFO:module4:2025-02-02 22:24:25 - Total datapoints in Database: 150
+INFO:root:2025-02-02 22:24:25 - Starting Module 5
+INFO:module5:2025-02-02 22:24:25 - No duplicates found in database
+INFO:module5:2025-02-02 22:24:25 - Total datapoints in Database: 150
+INFO:root:2025-02-02 22:24:25 - Pipeline completed successfully
+INFO:root:2025-02-02 22:24:25 - -------------------- PIPELINE COMPLETED --------------------
+INFO:root:2025-02-02 22:24:53 - -------------------- RUNNING PIPELINE --------------------
+INFO:root:2025-02-02 22:24:53 - Starting Module 1
+INFO:module1:2025-02-02 22:25:09 - Successfully parsed the page.
+INFO:root:2025-02-02 22:25:09 - Starting Module 2
+INFO:module2:2025-02-02 22:25:09 - Top Stories Link: https://news.google.com/./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen
+INFO:root:2025-02-02 22:25:25 - Starting Module 3
+INFO:module3:2025-02-02 22:25:25 - Successfully scraped 44 articles.
+INFO:root:2025-02-02 22:25:25 - Starting Module 4
+WARNING:module4:2025-02-02 22:26:01 - Stored 3/44 articles due to duplicates
+INFO:module4:2025-02-02 22:26:01 - Total datapoints in Database: 153
+INFO:root:2025-02-02 22:26:01 - Starting Module 5
+INFO:module5:2025-02-02 22:26:01 - No duplicates found in database
+INFO:module5:2025-02-02 22:26:01 - Total datapoints in Database: 153
+INFO:root:2025-02-02 22:26:01 - Pipeline completed successfully
+INFO:root:2025-02-02 22:26:01 - -------------------- PIPELINE COMPLETED --------------------

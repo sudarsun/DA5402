@@ -1,0 +1,22 @@
+# config.yaml
+scraping:
+  base_url: "https://news.google.com"
+  scraping_url: "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en" # Base URL to be scraped
+  sub_link_name: "Top Stories" # Name of the sub-link
+  headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36"
+    }  # Header to access ChromeDriver
+
+scraping_classes:
+  hl_class : "gPFEn"
+  thumbnail_class : "Quavad vwBmvb"
+  url_class : "WwrzSb"
+  publish_time_class : "hvbAAd"
+  publisher_class : "vr1PYe"
+
+skipper: # To save progress of previous modules, when running py files individually
+  top_stories_link: "https://news.google.com./topics/CAAqKggKIiRDQkFTRlFvSUwyMHZNRFZxYUdjU0JXVnVMVWRDR2dKSlRpZ0FQAQ?hl=en-IN&gl=IN&ceid=IN%3Aen"
+  top_stories_link_uk: "https://news.google.com./topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen"
+
+deduplication:
+  field: "metadata.img_hl_hash"
