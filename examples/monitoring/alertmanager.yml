@@ -1,0 +1,16 @@
+route:
+  group_by: ['alertname']
+  group_wait: 5s
+  group_interval: 5s
+  repeat_interval: 30s
+  receiver: 'web.hook'
+receivers:
+  - name: 'web.hook'
+    webhook_configs:
+      - url: 'https://webhook.site/a0c89276-3c7c-49a1-bce1-9eaa7b43ccc0'  # TO BE CHANGED TO YOUR OWN WEBHOOK URL
+inhibit_rules:
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'dev', 'instance']
