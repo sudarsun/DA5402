@@ -17,16 +17,16 @@ from prometheus_client import disable_created_metrics
 # disable **_created metric.
 disable_created_metrics()
 
-request_size = Summary('request_size_bytes', 'input data size (bytes)')  # _sum will track the total bytes, _count will track the number of calls.
-api_usage = Summary('api_usage', 'api run time monitoring') # _sum tracks total time taken, _count tracks number of calls.
+request_size = Summary('input_bytes', 'input data size (bytes)')  # _sum will track the total bytes, _count will track the number of calls.
+api_usage = Summary('api_runtime', 'api run time monitoring') # _sum tracks total time taken, _count tracks number of calls.
 
 # define the counter to track the usage based on client IP.
 counter = Counter('api_call_counter', 'number of times that API is called', ['endpoint', 'client'])
 
 gauge = Gauge('api_runtime_secs', 'runtime of the method in seconds', ['endpoint', 'client']) 
 
-info = Info('build_info', 'Prometheus Instrumented AI App')
-info.info({'version': '0.0.13', 'buildhost': 'drsudar@resonance'})
+info = Info('my_build', 'Prometheus Instrumented AI App')
+info.info({'version': '0.0.13', 'buildhost': '@resonance', 'author': 'Dr. Su Sa', 'builddate': 'March 2025'})
 
 nlp_en = spacy.load("en_core_web_sm")
 app = FastAPI(title="First AI application")
@@ -45,7 +45,7 @@ class Data(BaseModel):
 # NOTE: If the order of the decorator is swapped, api_usage does not work.
 @app.post("/np")
 @api_usage.time()
-def extract_np(data:Data, lang:str, request:Request):
+def extract_np(data:Data, request:Request, lang:str="en"):
     log.info(f"extract_np: received {len(data.text)} bytes on input")
     
     # let's track the amount of data processed by this API.
@@ -82,7 +82,7 @@ def extract_ne(data:Data, request:Request):
 # NOTE: If the order of the decorator is swapped, api_usage does not work.
 @app.post("/nptext")
 @api_usage.time()
-async def extract_body(text:str=Body(...), request:Request=None):
+def extract_body(text:str=Body(...), request:Request=None):  # the ... (ellipses) operator is a placeholder.
     log.info(f"extract_body: received {len(text)} bytes on input")
 
     # let's track the amount of data processed by this API.
@@ -102,6 +102,5 @@ async def extract_body(text:str=Body(...), request:Request=None):
 log.info("starting the prometheus monitor at port 18000")
 start_http_server(18000)
 
-# Run from command line: uvicorn ai_app:app --port 7000 --host 0.0.0.0
-# or invoke the code below.
+# start the fastapi server at 7000
 uvicorn.run(app, host='0.0.0.0', port=7000)
