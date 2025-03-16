@@ -23,14 +23,20 @@ api_usage = Summary('api_runtime', 'api run time monitoring') # _sum tracks tota
 # define the counter to track the usage based on client IP.
 counter = Counter('api_call_counter', 'number of times that API is called', ['endpoint', 'client'])
 
+# we didn't use this metric yet.
 gauge = Gauge('api_runtime_secs', 'runtime of the method in seconds', ['endpoint', 'client']) 
 
+# add build information to the info metric.
 info = Info('my_build', 'Prometheus Instrumented AI App')
 info.info({'version': '0.0.13', 'buildhost': '@resonance', 'author': 'Dr. Su Sa', 'builddate': 'March 2025'})
 
+# load up the Spacy NER processor
 nlp_en = spacy.load("en_core_web_sm")
+
+# create the AI application
 app = FastAPI(title="First AI application")
 
+# Setup the logging mechanism.
 log = logging.getLogger("AI_app")
 log.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
