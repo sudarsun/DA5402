@@ -10,6 +10,8 @@ from pydantic import BaseModel
 import spacy
 import uvicorn
 import logging
+import time
+from threading import Thread
 
 from prometheus_client import Summary, start_http_server, Counter, Gauge, Info
 from prometheus_client import disable_created_metrics
@@ -47,6 +49,39 @@ log.addHandler(ch)
 
 class Data(BaseModel):
     text:str
+
+@app.get("/make_cpu_busy")
+@api_usage.time()
+def make_cpu_busy(time_secs:int, request:Request=None):
+    # increment the counter per host per api.
+    counter.labels(endpoint='/make_cpu_busy', client=request.client.host).inc()
+
+    # define a thread function to wait for the supplied time in seconds.
+    def wait_thread(wait_time:int):
+        print(f"{wait_time=}")
+        # after waiting for the required time, 
+        time.sleep(wait_time)
+        return
+    
+    # start the wait thread, which will reset our flag.
+    thread = Thread(target=wait_thread, args=(time_secs,))
+    thread.start()
+
+    start = time.time()
+
+    # while the flag is unset, keep the cpu busy.
+    while(thread.is_alive()):
+        pass
+    
+    # compute the actual time taken
+    time_taken = time.time() - start
+
+    # wait for the thread to finish, officially.
+    thread.join()
+
+    return {"CPU actual busy time":time_taken, "CPU requested busy time":time_secs}
+
+
 
 # NOTE: If the order of the decorator is swapped, api_usage does not work.
 @app.post("/np")
