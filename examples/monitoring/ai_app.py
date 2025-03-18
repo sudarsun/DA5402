@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 # run this to pull the nlp model
 # python -m spacy download en_core_web_sm
@@ -58,7 +58,6 @@ def make_cpu_busy(time_secs:int, request:Request=None):
 
     # define a thread function to wait for the supplied time in seconds.
     def wait_thread(wait_time:int):
-        print(f"{wait_time=}")
         # after waiting for the required time, 
         time.sleep(wait_time)
         return
@@ -139,9 +138,11 @@ def extract_body(text:str=Body(...), request:Request=None):  # the ... (ellipses
         records.append(record)
     return {"results": records}
 
-# start the exporter metrics service
-log.info("starting the prometheus monitor at port 18000")
-start_http_server(18000)
+if __name__ == "__main__":
+    # start the exporter metrics service
+    log.info("starting the prometheus monitor at port 18000")
+    start_http_server(18000)
 
-# start the fastapi server at 7000
-uvicorn.run(app, host='0.0.0.0', port=7000)
+    # start the fastapi server at 7000
+    # let's start the app in multiprocessing mode to handle multiple client requests.
+    uvicorn.run("__main__:app", workers=5, host='0.0.0.0', port=7000)
