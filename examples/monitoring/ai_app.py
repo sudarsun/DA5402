@@ -145,4 +145,4 @@ if __name__ == "__main__":
 
     # start the fastapi server at 7000
     # let's start the app in multiprocessing mode to handle multiple client requests.
-    uvicorn.run("__main__:app", workers=5, host='0.0.0.0', port=7000)
+    uvicorn.run("__main__:app", workers=1, host='0.0.0.0', port=7000)
