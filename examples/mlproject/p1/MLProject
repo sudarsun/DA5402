@@ -1,0 +1,22 @@
+name: MLProject
+
+python_env: python_env.yaml
+
+entry_points:
+  main:
+    parameters:
+      data_file: string
+      mean: 
+        type: float
+        default: 0.0
+      sd: {type: float, default: 1.0}
+      count: int
+    command: "python sample.py {count} {mean} {sd} {data_file}"
+  validate:
+    parameters:
+      data_file: path
+      true_mean: {type: float, default: 0.0}
+      true_sd: {type: float, default: 1.0}
+    command: "python validate.py {data_file} {true_mean} {true_sd}"
+
+
