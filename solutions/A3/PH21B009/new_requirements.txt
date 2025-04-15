@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pillow
+numpy
+python-multipart
+requests
+matplotlib
+dill

@@ -1,0 +1,6 @@
+﻿fastapi
+pillow
+uvicorn
+numpy
+matplotlib
+requests
