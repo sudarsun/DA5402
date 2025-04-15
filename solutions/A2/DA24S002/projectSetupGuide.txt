@@ -1,0 +1,77 @@
+Follow the following steps to setup the project:
+Run the following commands sequentially:
+
+make sure you are in the location where docker-compose.yaml and Dockerfile and requirement.txt is there.
+
+
+## I have modified the docker-compose.yaml file to also map to the 'include' folder, by default it only includes the dag, logs and plugins folders
+## so make sure you use the docker-compose.yaml file that I have provided.
+
+mkdir dags
+mkdir include
+mkdir logs
+mkdir plugins
+
+run the following command in wsl.
+
+echo -e "AIRFLOW_UID=$(id -u)" > .env
+
+now you can exit wsl.
+
+run the following commands in a terminal
+
+docker compose up airflow-init
+docker compose up
+
+## after the image has been built and the default airflow container is running properly, bring it down
+## run the follow command in another terminal to bring it down
+docker compose down
+
+## open docker-compose.yaml file, and comment line = 52, and uncomment line 53
+## run the following commands next
+
+docker build -t puspak/airflow:latest .
+docker compose up
+
+Now, go to airflow dashboard to define the file connector and postgres db connector
+
+Admin -> Connections -> 
+
+1. Adding file connector:
+	Click on the "+" button
+	Connection id -> fs_default
+	Connection Type -> File (path)
+	Click save
+2. Adding postgres db connector:
+	Click on the "+" button
+	Connection id -> tutorial_pg_conn
+	Connection Type -> Postgres
+	Host -> postgres
+	Database -> airflow
+	Login -> airflow
+	Password -> airflow
+	Post -> 5432
+	Click save
+	
+
+## copy the files provided in the include folder in Github (extractor.py, scraper.py, config.py) to the include folder you created
+## update config.py file to add your proper mail ids and app password (app password generation guide is given in file - gmailAppPasswordGenerationGuide.txt)
+## copy the dag files (pipelineRunAndFileCreationDag.py, emailSendAndFileDeletionDag.py) from Github, to the dags folder you created
+
+Go to airflow dashboard and search for the following dags :
+
+1. image_dataset_and_file_creator
+2. email_sender_and_file_deleter
+
+If the dags don't show up after searching, try to do "docker compose down" and "docker compose up" again, and open airflow dashboard and search again.
+
+
+
+By default they are setup to run every hour, but you should turn them on first in order for the scheduling to start
+After searching and clicking on the dag name to go inside the dag, you can see on top left that there is a toggle button (Pause/Unpause - DAG), you can enable the DAG using that.
+To run it more frequently you can change the cron tab by changing the argument :
+schedule_interval="..." in the code for each dag, or run both the dags manually together as and when required. The 2nd dag if ran manually will wait for creation of file by the first dag, and then do it's thing.
+
+
+
+

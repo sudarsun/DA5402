@@ -1,0 +1,7 @@
+configparser
+selenium
+chromedriver-binary-auto
+bs4
+requests
+psycopg2-binary
+rapidfuzz
