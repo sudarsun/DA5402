@@ -1,0 +1,10 @@
+groups:
+ - name: CPU Util > 200%
+   rules:
+   - alert: CPUMoreThan200Percent
+     expr: cpu_util > 2
+     for: 5s
+ - name: cpu-node
+   rules:
+   - record: cpu_util
+     expr: sum by(mode) (rate(node_cpu_seconds_total{mode=~"system|user"}[1m]))
