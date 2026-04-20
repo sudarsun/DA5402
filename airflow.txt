@@ -1,0 +1,15 @@
+# Install the package
+pip install "apache-airflow[celery]==3.1.8" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-3.1.8/constraints-3.12.txt"
+
+# set the path
+PATH=$PATH:~/.local/bin
+
+# set the home directory.
+export AIRFLOW_HOME=~/airflow
+
+# to change the port in the configuration file.
+airflow config list --defaults > ~/airflow/airflow.cfg
+
+# To disable users and get to actions without a fuzz. [add to airflow.cfg]
+[core]
+simple_auth_manager_all_admins = "True"
